@@ -1,0 +1,80 @@
+RED TEXT here means that the resource is very hopeful for a solution
+Multimodal
+Best Papers
+Similar work to ours
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6541714/
+https://aapm.onlinelibrary.wiley.com/doi/epdf/10.1002/acm2.12945  Facial expression monitoring system for predicting patients sudden movement during radiotherapy using deep learning -> CK+ DATASET
+https://arxiv.org/abs/1804.10201 The Intelligent ICU Pilot Study: Using Artificial Intelligence Technology for Autonomous Patient Monitoring
+Intelligent Autonomous Elderly Patient Home Monitoring System https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8761204&casa_token=JOdilsu5k2MAAAAA:GX5XRPU08yRkX2CEV4BJz_OzL4rMBE3h0v7IKE9XRtyU6F1PMlPT5m8zd7Mnw6-Fjw-U6MqzK_J-2t0&tag=1 
+https://deliverypdf.ssrn.com/delivery.php?ID=833004024029081110103068118121113030102056089014095061075098081117074091111085011028028097023029026127033124079024012028125028042042033065023028064098084018094066074037076005031007094013095120027072029081001002099068126024100004016006097122076003083110&EXT=pdf&INDEX=TRUE Face recognition-based automatic hospital admission with SMS alerts
+
+
+Chatbot
+
+Any chatbot has three components:
+Natural Language Understanding(NLU)-is about entity or actions extractions from the conversation or user query; Dialogue Management(DM)-is mainly Reinforcement Learning and is the agent(Like in AI) taking the most appropriate actions from the set of many and NLG(Natural Language Generation) converting the final action by the DM into the Human Language as a response.
+TASK:
+FINDING THE RIGHT DATASET(most important): The dataset should have motivational types of conversations or WHICH TRIES TO RAISE HOPE IN THE DYING PATIENT. A POSSIBLE SEARCH COULD BE: MOTIVATIONAL CONVERSATION-BASED DATASETS
+Deciding the type of method which should be followed while implementing the chatbot
+Intro Resources(First, Knowing How We Could Build the chatbot):
+
+Methods
+Building from scratch:
+E.g., Conversation Chatbot for Disease Diagnosis
+https://dl.acm.org/doi/pdf/10.1145/3511808.3557296?casa_token=pTjbmUA66f0AAAAA:qy808O9hZN3dILi9qErpHA6BDW5Az3BTYwoluZ6OOxl2ETXhWzdbZihamxNk32wCJy2VpsKdCt8 
+Implementing all three components(it is multimodal, but the image part could be ignored, and we just need to change the dataset and the rest of the implementation remains the same):
+NLU - bert, DM - RL agent
+https://aclanthology.org/P18-2033.pdf  (only DM part Implementation as RL)
+
+Our Task Specific Resources
+https://www.fingerprintforsuccess.com/blog/mental-health-chatbot mentions the mental health chatbots which help to deal with problems
+From the mentioned chatbots, I tried out one Youper, it is like a flowchart where the user only gets fixed options to respond, and the output is fixed for each response. To test the robustness of the text-based answers, I am writing different inputs than expected. It considers those outputs to be ideal and generates the next ideal question.
+But the point is there exist CHATBOTS FOR MENTAL HEALTH.
+VERY IMPORTANT
+https://towardsdatascience.com/counsel-chat-bootstrapping-high-quality-therapy-data-971b419f33da  THEN ttps://medium.com/huggingface/how-to-build-a-state-of-the-art-conversational-ai-with-transfer-learning-2d818ac26313 
+
+
+General resources(could be leveraged for any problem):
+There is also one framework: RASA (https://rasa.com/ )
+In this framework, we just have to put the data in the required format, and then it performs all other actions.
+Here intents are 
+https://medium.com/voice-tech-podcast/how-to-create-chatbot-using-rasa-82954e141ae7
+https://www.youtube.com/watch?v=1lwddP0KUEg using neural networks
+NLU and DM - identifying the words which were present during the training time and putting those places as one and then feeding that vector of the sentence(representing the words of the sentence which were present during the training time) into a neural network that predicts the class or intent in which it falls. Then THE OUTPUT IS DEFINED IN THE TRAINING DATA, WHICH SHOULD BE FOR THAT PARTICULAR INTENT.
+
+
+DATASET
+Task-oriented: 
+WORTH RESOURCE: Therapy-based data (? conversations) https://towardsdatascience.com/counsel-chat-bootstrapping-high-quality-therapy-data-971b419f33da 
+https://github.com/nbertagnolli/counsel-chat/tree/master/data
+Data from counseling websites where a person enters their questions, then any THERAPIST ANSWERS THE QUESTION. So we can train our model from this dataset.
+Emotion Support Conversation dataset (ESConv) - 1,300 conversations
+https://github.com/thu-coai/Emotional-Support-Conversation 
+https://arxiv.org/pdf/2106.01144v1.pdf Towards Emotional Support Dialog Systems (paper)
+
+BENCHMARK DATASET: EmpatheticDialogues(25K conversations)
+https://www.kaggle.com/datasets/atharvjairath/empathetic-dialogues-facebook-ai 
+https://github.com/facebookresearch/EmpatheticDialogues 
+https://paperswithcode.com/dataset/empatheticdialogues 
+ - Empathetic Open-domain Conversation: https://aclanthology.org/P19-1534.pdf (PAPER)
+
+
+A Large-Scale Dataset for Motivational Dialogue System: An Application of Natural Language Generation to Mental Health https://ieeexplore.ieee.org/document/9533924 
+https://aclanthology.org/2020.emnlp-main.425.pdf A Computational Approach to Understanding Empathy Expressed in Text-Based Mental Health Support - contains dataset-but not so goal-oriented
+GitHub REPO CONTAINING ALL PAPERS related to emotion, empathy, and mental health support in dialog systems and emotional, empathetic, and supportive response generation  https://github.com/Sahandfer/EMPaper 
+https://www.kaggle.com/datasets/dsxavier/diagnoise-me
+
+
+
+
+General Chatbot based:
+https://www.data-hunters.com/question/chatbot-datasets/
+
+
+
+https://repository.iiitd.edu.in/xmlui/bitstream/handle/123456789/977/Arushi%20Gupta_2017030.pdf?sequence=1
+
+https://paperswithcode.com/dataset/mimic-ii-1
+
+https://archive.ics.uci.edu/ml/datasets/ICU
+
